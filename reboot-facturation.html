@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" id="couleurBarre" content="black">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="REBOOT.">
+<title>REBOOT. Réseau</title>
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- Supabase (chargé mais pas utilisé pour l'instant) -->
+<script async src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.0/+esm"></script>
+<style>
+/* DESIGN.md §1 — tokens. Zéro hex hors de ce bloc. */
+:root{
+  /* base — sombre */
+  --fond:oklch(0.12 0.006 270); --panneau:oklch(0.18 0.010 270); --releve:oklch(0.22 0.012 270);
+  --filet:oklch(0.28 0.012 270); --filet-fort:oklch(0.38 0.015 270);
+  --encre:oklch(0.97 0.004 270); --sourd:oklch(0.72 0.015 270);
+  --rouge:oklch(0.58 0.21 22); --rouge-trait:oklch(0.68 0.20 20);
+  --rouge-fond:oklch(0.20 0.045 20); --rouge-bord:oklch(0.36 0.090 20); --rouge-sourd:oklch(0.80 0.070 20);
+  --bleu:oklch(0.58 0.20 265); --bleu-trait:oklch(0.74 0.13 265);
+  --bleu-fond:oklch(0.20 0.050 265); --bleu-bord:oklch(0.34 0.090 265);
+  --code-fond:oklch(0.10 0.006 270); --code-encre:oklch(0.86 0.010 270);
+  --nav-fond:oklch(0.12 0.006 270 / .92);
+  --toast-bg:oklch(0.97 0.004 270); --toast-fg:oklch(0.12 0.006 270);
+  --ombre-boost:0 14px 28px -12px oklch(0 0 0 / .65);
+  /* constantes (identiques dans les deux thèmes) */
+  --sur-rouge:oklch(1 0 0);
+  /* rayons — hiérarchie, pas un rayon unique */
+  --r-bloc:20px; --r-carte:10px; --r-champ:6px; --r-mini:4px; --r-pastille:999px;
+  /* tailles texte */
+  --t-xs:13px; --t-s:15px; --t-m:17px; --t-l:21px; --t-xl:30px; --t-xxl:32px; --t-logo:28px;
+  /* polices */
+  --titre:"Barlow Condensed",Impact,"Arial Narrow",sans-serif;
+  --texte:"Barlow",system-ui,-apple-system,sans-serif;
+  color-scheme:dark;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+/* clair — papier d'atelier */
+html[data-theme="clair"]{
+  --fond:oklch(0.97 0.004 270); --panneau:oklch(1 0 0); --releve:oklch(0.93 0.006 270);
+  --filet:oklch(0.86 0.008 270); --filet-fort:oklch(0.74 0.012 270);
+  --encre:oklch(0.20 0.010 270); --sourd:oklch(0.46 0.015 270);
+  --rouge:oklch(0.47 0.19 22); --rouge-trait:oklch(0.50 0.19 22);
+  --rouge-fond:oklch(0.95 0.025 20); --rouge-bord:oklch(0.80 0.090 20); --rouge-sourd:oklch(0.42 0.090 20);
+  --bleu:oklch(0.44 0.20 265); --bleu-trait:oklch(0.46 0.18 265);
+  --bleu-fond:oklch(0.94 0.030 265); --bleu-bord:oklch(0.78 0.080 265);
+  --code-fond:oklch(0.95 0.004 270); --code-encre:oklch(0.30 0.010 270);
+  --nav-fond:oklch(0.97 0.004 270 / .92);
+  --toast-bg:oklch(0.20 0.010 270); --toast-fg:oklch(0.97 0.004 270);
+  --ombre-boost:0 12px 24px -12px oklch(0.25 0.02 270 / .28);
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:inherit;margin:0;padding:0}
+::selection{background:var(--rouge);color:var(--sur-rouge)}
+html{accent-color:var(--rouge);caret-color:var(--rouge-trait);scrollbar-color:var(--filet-fort) var(--fond)}
+.compte,.jour b,.afaire-nb,#serieNb,.cible,.cible-champ{font-variant-numeric:tabular-nums}
+button{transition:background-color .15s,border-color .15s,color .15s}
+@media (hover:hover){.pm button:hover,.idee-act button:hover,.seg button:hover,.pill:hover,.btn.sec:hover,.afaire-go.sec:hover,.bascule:hover{border-color:var(--encre)}.btn:not(:disabled):hover,.afaire-go:not(.sec):hover{filter:brightness(1.08)}.nav button:hover{color:var(--encre)}}
+.pm button:active,.idee-act button:active,.seg button:active,.pill:active,.btn:not(:disabled):active,.afaire-go:active,.etape:active{transform:scale(.97)}
+html,body{height:100%}
+body{background:var(--fond);color:var(--encre);font-family:var(--texte);font-size:var(--t-m);line-height:1.4;-webkit-tap-highlight-color:transparent}
+p,.sous,.rapport{text-wrap:pretty}
+h2{text-wrap:balance}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer;border:0;background:none}
+:focus-visible{outline:2px solid var(--bleu-trait);outline-offset:2px}
+.app{max-width:480px;margin:0 auto;padding:20px 20px 110px}
+
+/* En-tête */
+.top{display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:8px;margin-bottom:22px}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--titre);font-weight:900;font-size:var(--t-logo);letter-spacing:.5px}
+.logo-ic{width:40px;height:40px;border-radius:var(--r-carte);background:var(--panneau);border:1px solid var(--filet);display:grid;place-items:center}
+.logo-ic .ombre{stroke:var(--bleu)} .logo-ic .signe{stroke:var(--rouge)}
+.logo-mot{font-weight:inherit}
+.logo span{color:var(--rouge-trait)}
+.serie{display:flex;align-items:center;gap:6px;padding:7px 12px;border-radius:var(--r-pastille);background:var(--rouge-fond);border:1px solid var(--rouge-bord);color:var(--rouge-trait);font-weight:700}
+.serie span{color:var(--encre)}
+.serie.off{background:var(--panneau);border-color:var(--filet);color:var(--sourd)}
+.serie.off span{color:var(--sourd)}
+.bascule{width:44px;height:44px;display:grid;place-items:center;border-radius:var(--r-mini);border:1px solid var(--filet-fort);color:var(--sourd)}
+.bascule:active{color:var(--encre);border-color:var(--encre)}
+
+h2{font-family:var(--titre);font-weight:800;font-size:var(--t-xl);text-transform:uppercase;line-height:1;margin-bottom:14px}
+.sous{color:var(--sourd);font-size:var(--t-s)}
+.sous b{color:var(--encre)} .sous b.alerte{color:var(--rouge-trait)}
+
+/* Carte phrase boost — aplat, pas de dégradé ni de bord accent */
+.boost{padding:22px 20px;border-radius:var(--r-bloc);background:var(--releve);transform:rotate(-1.2deg);margin:6px 4px 30px;box-shadow:var(--ombre-boost)}
+.boost p{font-family:var(--titre);font-weight:700;font-size:var(--t-xxl);line-height:1.05}
+.boost p em{font-style:normal;color:var(--rouge-trait);display:block}
+.pill{display:inline-flex;align-items:center;gap:8px;margin-top:16px;padding:10px 18px;border-radius:var(--r-pastille);border:1px solid var(--filet-fort);background:var(--releve);font-weight:600}
+
+/* Objectifs — grille */
+.bloc{margin-bottom:30px}
+.obj{display:grid;grid-template-columns:44px 1fr auto;align-items:center;gap:14px;padding:14px;border-radius:var(--r-carte);background:var(--panneau);border:1px solid var(--filet);margin-bottom:10px}
+.obj.fait{border-color:var(--rouge-bord)}
+.obj-ic{width:44px;height:44px;border-radius:var(--r-champ);display:grid;place-items:center;background:var(--rouge-fond);border:1px solid var(--rouge-bord);color:var(--rouge-trait)}
+.obj-ic.b{background:var(--bleu-fond);border-color:var(--bleu-bord);color:var(--bleu-trait)}
+.obj-info{min-width:0}
+.obj-nom{font-weight:700}
+.cible{color:var(--encre);text-decoration:underline;min-width:44px;min-height:44px;margin:-12px 0;padding:0 6px}
+.cible-champ{font-size:16px;width:64px;min-height:44px;padding:0 8px;margin:4px 0;border-radius:var(--r-mini);background:var(--releve);border:1px solid var(--bleu-trait);color:var(--encre)}
+.barre{height:6px;border-radius:var(--r-mini);background:var(--releve);margin-top:7px;overflow:hidden}
+.barre i{display:block;height:100%;background:var(--rouge);transform-origin:left;transition:transform .35s cubic-bezier(.25,1,.5,1)}
+.compte{font-family:var(--titre);font-weight:900;font-size:var(--t-xl);min-width:56px;text-align:right}
+.compte small{font-size:var(--t-s);color:var(--sourd)}
+.pm{grid-column:2/4;display:flex;justify-content:flex-end;gap:8px}
+.pm button{width:44px;height:44px;border-radius:var(--r-mini);background:var(--releve);border:1px solid var(--filet);font-weight:700}
+
+/* Semaine */
+.semaine{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+.jour{text-align:center;padding:10px 0;border-radius:var(--r-champ);background:var(--panneau);border:1px solid var(--filet);font-size:var(--t-xs);color:var(--sourd)}
+.jour b{display:block;font-family:var(--titre);font-size:var(--t-l);color:var(--encre)}
+.jour.ok{background:var(--rouge-fond);border-color:var(--rouge)}
+.jour.auj{outline:1px dashed var(--bleu-trait);outline-offset:2px}
+
+/* Champs et boutons */
+.etiquette{display:block;font-weight:600;font-size:var(--t-xs);color:var(--sourd);margin:0 0 6px}
+.champ{width:100%;font-size:max(16px,1em);padding:13px 14px;border-radius:var(--r-champ);background:var(--panneau);border:1px solid var(--filet);margin-bottom:10px}
+.champ::placeholder{color:var(--sourd)}
+.btn{width:100%;overflow-wrap:break-word;padding:15px;border-radius:var(--r-carte);background:var(--rouge);color:var(--sur-rouge);font-family:var(--titre);font-weight:800;font-size:var(--t-l);letter-spacing:.5px;text-transform:uppercase}
+.btn.sec{background:var(--releve);border:1px solid var(--filet-fort);color:var(--encre)}
+.ligne{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.idee{padding:14px;border-radius:var(--r-carte);background:var(--panneau);border:1px solid var(--filet);margin-bottom:10px}
+.idee-act{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:10px}
+.idee-act button{min-height:44px;padding:9px;border-radius:var(--r-champ);background:var(--releve);border:1px solid var(--filet);font-size:var(--t-xs);font-weight:600}
+.vide{color:var(--sourd);padding:20px;border:1px dashed var(--filet-fort);border-radius:var(--r-carte)}
+
+/* Navigation */
+.nav{position:fixed;left:0;right:0;bottom:0;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:var(--nav-fond);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--filet);display:grid;grid-template-columns:repeat(3,minmax(0,150px));justify-content:center;gap:6px;z-index:5}
+.nav button{display:flex;flex-direction:column;align-items:center;gap:3px;padding:6px;border-radius:var(--r-champ);font-size:var(--t-xs);font-weight:600;color:var(--sourd)}
+.nav button[aria-current="page"]{color:var(--encre);background:var(--releve)}
+.nav button[aria-current="page"] svg{stroke:var(--rouge-trait)}
+.vue{display:none}.vue.on{display:block}
+
+/* Sélecteurs, étapes, rapport */
+.seg{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.seg button{min-height:44px;padding:9px 14px;border-radius:var(--r-pastille);border:1px solid var(--filet-fort);background:var(--releve);font-weight:600;font-size:var(--t-xs)}
+.seg button[aria-pressed="true"]{background:var(--rouge);border-color:var(--rouge);color:var(--sur-rouge)}
+.etape{display:grid;grid-template-columns:24px 1fr;gap:12px;align-items:start;padding:13px 14px;border-radius:var(--r-champ);background:var(--panneau);border:1px solid var(--filet);margin-bottom:8px;width:100%;text-align:left}
+.etape .case{width:24px;height:24px;border-radius:var(--r-mini);border:2px solid var(--filet-fort);display:grid;place-items:center;margin-top:1px;color:var(--sur-rouge)}
+.etape.ok{border-color:var(--rouge-bord)}
+.etape.ok .case{background:var(--rouge);border-color:var(--rouge)}
+.etape.ok .lib{color:var(--sourd);text-decoration:line-through}
+.etape small{display:block;color:var(--sourd);font-size:var(--t-xs)}
+.rapport{white-space:pre-wrap;font-size:var(--t-xs);color:var(--code-encre);margin-top:8px;padding:10px;border-radius:var(--r-mini);background:var(--code-fond);border:1px solid var(--filet)}
+
+/* Finish gate — premier objet lu : ce qui reste à faire */
+.afaire{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:12px;padding:14px;border-radius:var(--r-carte);background:var(--panneau);border:1px solid var(--filet);margin-bottom:18px}
+.afaire.urgent{background:var(--rouge-fond);border-color:var(--rouge-bord)}
+.afaire-nb{overflow-wrap:break-word;font-family:var(--titre);font-weight:900;font-size:var(--t-xl);line-height:1;text-transform:uppercase}
+.afaire.urgent .afaire-nb{color:var(--rouge-trait)}
+.afaire.urgent .sous{color:var(--rouge-sourd)}
+.afaire-go{min-height:44px;padding:10px 14px;border-radius:var(--r-champ);background:var(--rouge);color:var(--sur-rouge);font-weight:700;font-size:var(--t-xs)}
+.afaire-go.sec{background:var(--releve);color:var(--encre);border:1px solid var(--filet-fort)}
+.etat-envoi{font-size:var(--t-xs);font-weight:700;color:var(--sourd)}
+.etat-envoi.attente{color:var(--rouge-trait)}
+.idee.neuf{border-color:var(--bleu-trait)}
+.jour-titre{font-family:var(--titre);font-weight:800;font-size:var(--t-l);text-transform:uppercase;margin:22px 0 10px}
+.jour-titre:first-child{margin-top:0}
+.confirme{display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:8px;margin-top:10px;padding:8px 10px;border-radius:var(--r-champ);background:var(--bleu-fond);border:1px solid var(--bleu-bord)}
+.confirme span{font-weight:600;font-size:var(--t-xs)}
+.confirme button{min-height:44px;padding:0 14px;border-radius:var(--r-champ);background:var(--releve);border:1px solid var(--filet-fort);font-weight:700;font-size:var(--t-xs)}
+.confirme button.oui{background:var(--rouge);border-color:var(--rouge);color:var(--sur-rouge)}
+.etape.suivante{border-color:var(--bleu-trait)}
+.etape.suivante .lib{font-weight:700}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.champ[aria-invalid="true"]{border-color:var(--rouge-trait)}
+.toast{position:fixed;left:50%;bottom:100px;transform:translateX(-50%) translateY(20px);opacity:0;background:var(--toast-bg);color:var(--toast-fg);padding:10px 18px;border-radius:var(--r-pastille);font-weight:700;transition:.25s;z-index:30;pointer-events:none;display:flex;align-items:center;gap:12px;width:max-content;max-width:calc(100% - 32px)}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+.toast.on.action{pointer-events:auto}
+.toast button{min-height:44px;padding:0 12px;margin:-8px -8px -8px 0;border-radius:var(--r-pastille);font-weight:700;text-decoration:underline;color:inherit}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<script>
+/* DESIGN.md §3 — IIFE avant peinture (anti-flash) */
+(function(){
+  var saved=null; try{saved=localStorage.getItem('theme')}catch(e){}
+  var p=new URLSearchParams(location.search).get('theme');
+  var sys=window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'clair':'base';
+  var t=p||saved||sys;
+  if(t!=='base')document.documentElement.dataset.theme=t;
+})();
+</script>
+</head>
+<body>
+<div class="app">
+
+  <header class="top">
+    <div class="logo">
+      <div class="logo-ic"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="ombre" d="M12 3v8M17.7 6.3A8 8 0 1 1 6.3 6.3M6.3 6.3H2.9M6.3 6.3v3.4" transform="translate(2.2 2.2)"/><path class="signe" d="M12 3v8M17.7 6.3A8 8 0 1 1 6.3 6.3M6.3 6.3H2.9M6.3 6.3v3.4" transform="translate(.6 .6)"/></svg></div>
+      <b class="logo-mot">REBOOT<span>.</span></b>
+    </div>
+    <div class="serie" id="serieBadge" aria-label="Série de jours"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22c4 0 7-3 7-7 0-5-4-7-5-11-2 2-3 4-3 6-1-1-2-2-2-4-2 2-4 5-4 9 0 4 3 7 7 7z"/></svg><span id="serieNb">0</span></div>
+    <button class="bascule" id="themeToggle" type="button"></button>
+  </header>
+
+  <!-- AUJOURD'HUI -->
+  <section class="vue on" id="v-jour">
+    <div class="afaire" id="afaire"></div>
+
+    <div class="boost">
+      <p id="phrase"></p>
+      <button class="pill" id="uneAutre"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg>Une autre</button>
+    </div>
+
+    <div class="bloc">
+      <h2>Mes objectifs du jour</h2>
+      <div id="objectifs"></div>
+    </div>
+
+    <div class="bloc">
+      <h2>Ma série</h2>
+      <p class="sous" id="serieMsg" style="margin-bottom:12px"></p>
+      <div class="semaine" id="semaine"></div>
+    </div>
+  </section>
+
+  <!-- INTERVENTIONS -->
+  <section class="vue" id="v-inter">
+    <h2>Nouvelle intervention</h2>
+    <p class="sous" style="margin-bottom:14px">Remplis en 30 secondes. L'app écrit ton rapport.</p>
+    <label class="etiquette" for="site">Client ou site</label>
+    <input class="champ" id="site" list="sitesRecents" maxlength="120" autocomplete="off" placeholder="ex : Mairie, 2e étage">
+    <datalist id="sitesRecents"></datalist>
+    <div class="seg" id="typeInter" role="group" aria-label="Type d'intervention"></div>
+    <div class="seg" id="etatInter" role="group" aria-label="État en partant"></div>
+    <label class="etiquette" for="probleme">Le problème</label>
+    <input class="champ" id="probleme" maxlength="300" placeholder="ex : plus d'internet au bureau 3">
+    <label class="etiquette" for="solution">Ce que j'ai fait</label>
+    <input class="champ" id="solution" maxlength="300" placeholder="ex : prise réseau refaite">
+    <label class="etiquette" for="materiel">Matériel utilisé (facultatif)</label>
+    <input class="champ" id="materiel" maxlength="200" placeholder="ex : 2 connecteurs RJ45">
+    <button class="btn" id="ajoutInter">Créer le rapport</button>
+    <button class="btn sec" id="annulerEdit" hidden style="margin-top:10px">Annuler la modification</button>
+    <div style="margin-top:26px" id="inters"></div>
+    <div class="bloc" style="margin-top:30px">
+      <h2>Sauvegarde</h2>
+      <p class="sous" style="margin-bottom:12px">Tes rapports vivent dans ce téléphone. Garde une copie ailleurs (Fichiers, iCloud, mail).</p>
+      <div class="ligne">
+        <button class="btn sec" id="exporter">Sauvegarder</button>
+        <button class="btn sec" id="importer">Restaurer</button>
+      </div>
+      <input type="file" id="fichierImport" accept="application/json,.json" hidden>
+    </div>
+  </section>
+
+  <!-- DIAGNOSTIC -->
+  <section class="vue" id="v-diag">
+    <h2>Diagnostic</h2>
+    <p class="sous" style="margin-bottom:14px">Choisis la panne. Suis les étapes dans l'ordre, coche au fur et à mesure.</p>
+    <div class="seg" id="pannes"></div>
+    <p class="sous" id="progression" style="margin-bottom:10px"></p>
+    <div id="etapes"></div>
+    <div class="ligne" style="margin-top:12px">
+      <button class="btn sec" id="raz">Recommencer</button>
+      <button class="btn" id="resolu">Panne résolue</button>
+    </div>
+  </section>
+</div>
+
+<nav class="nav" aria-label="Navigation">
+  <button data-v="v-jour" aria-current="page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg>Aujourd'hui</button>
+  <button data-v="v-inter"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>Interventions</button>
+  <button data-v="v-diag"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="7" rx="2"/><rect x="2" y="14" width="20" height="7" rx="2"/><path d="M6 6.5h.01M6 17.5h.01"/></svg>Diagnostic</button>
+  <button onclick="afficherFactures()" style="flex: 1; padding: 12px; background: none; border: none; font-size: 14px; color: var(--texte); cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 4px;">
+    <span style="font-size: 20px;">💰</span>
+    Factures
+  </button>
+</nav>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* ---------- Stockage (localStorage si dispo, sinon mémoire) ---------- */
+const CLE="boost-reseau-v1"; let memoire=null;
+function charger(){try{const s=localStorage.getItem(CLE);if(s)return JSON.parse(s)}catch(e){}return memoire}
+let alerteStock=false;
+function sauver(){memoire=etat;try{localStorage.setItem(CLE,JSON.stringify(etat))}catch(e){if(!alerteStock){alerteStock=true;setTimeout(()=>toast("Sauvegarde impossible : tes données seront perdues à la fermeture"),0)}}}
+
+/* ---------- Factures en localStorage ---------- */
+function sauvegarderFacture(facture){
+  let factures=JSON.parse(localStorage.getItem('factures')||'[]');
+  factures.push({...facture,id:Date.now()});
+  localStorage.setItem('factures',JSON.stringify(factures));
+}
+function chargerFactures(){
+  return JSON.parse(localStorage.getItem('factures')||'[]');
+}
+function afficherFactures(){
+  const factures=chargerFactures();
+  const html=factures.map(f=>`
+    <div style="border: 1px solid var(--bleu); padding: 12px; margin: 8px 0; border-radius: 10px;">
+      <div style="font-weight: bold;">FA-${f.id}</div>
+      <div style="font-size: 0.9em; color: var(--texte_secondaire);">
+        Client: ${f.client} | Total: ${f.total} €
+      </div>
+    </div>
+  `).join('');
+
+  const modal=document.createElement('div');
+  modal.style.cssText='position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; z-index: 1000;';
+  modal.innerHTML=`
+    <div style="background: var(--fond); padding: 20px; border-radius: 20px; max-height: 80vh; overflow-y: auto; width: 90%; max-width: 500px;">
+      <h2 style="margin-top: 0;">Factures</h2>
+      ${html||'<p>Aucune facture.</p>'}
+      <button onclick="this.parentElement.parentElement.remove()" style="width: 100%; padding: 12px; margin-top: 20px; background: var(--bleu); border: none; border-radius: 8px; color: white; font-weight: bold; cursor: pointer;">Fermer</button>
+    </div>
+  `;
+  document.body.appendChild(modal);
+}
+
+const PHRASES=[
+ ["Le réveil a sonné.","Le réseau aussi."],
+ ["Une panne bien notée","est une panne à moitié réglée."],
+ ["Pas de rapport,","pas d'intervention."],
+ ["Commence par le câble.","Toujours."],
+ ["Client content,","ticket fermé."],
+ ["Range ta baie.","Le prochain te remerciera."],
+ ["Teste avant de partir.","Pas après l'appel du client."],
+ ["Un ticket à la fois.","Jusqu'au bout."],
+ ["Étiquette tout.","Ton toi de demain dit merci."],
+ ["Le plus simple d'abord.","Le compliqué ensuite."],
+ ["Tu répares des choses","que personne ne voit. Respect."],
+ ["Ferme tes tickets.","Ta tête sera plus légère."]
+];
+const OBJ_DEF=[
+ {id:"inter",nom:"Interventions",ic:"b"},
+ {id:"ticket",nom:"Tickets fermés",ic:"r"},
+ {id:"rapport",nom:"Rapports envoyés",ic:"b"}
+];
+const ICONES={
+ inter:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg>',
+ ticket:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>',
+ rapport:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg>'
+};
+const TYPES=["Panne","Installation","Maintenance","Câblage"];
+const PANNES={
+ "Pas d'internet":[
+  ["Le câble est bien branché ?","Voyant allumé sur la prise et sur le PC."],
+  ["Les autres ont internet ?","Si personne n'a internet, c'est la box ou le routeur."],
+  ["Le PC a une adresse IP ?","ipconfig : si 169.254.x.x, le DHCP ne répond pas."],
+  ["Ping de la passerelle","ping de la box ou du routeur. Pas de réponse = souci local."],
+  ["Ping d'une adresse internet","ping 8.8.8.8. Ça répond = internet OK."],
+  ["Ping d'un nom de site","ping google.fr. Ne répond pas mais 8.8.8.8 oui = souci DNS."],
+  ["Redémarrer la box ou le switch","En dernier, et prévenir avant de couper."]
+ ],
+ "Wi-Fi lent":[
+  ["Tester au plus près de la borne","Rapide près de la borne = problème de portée."],
+  ["Comparer avec un câble","Lent aussi en câble = le souci vient d'ailleurs."],
+  ["Compter les appareils connectés","Trop d'appareils sur une seule borne."],
+  ["Changer de canal Wi-Fi","Les voisins sont peut-être sur le même canal."],
+  ["Faire un test de débit","Noter le chiffre dans le rapport."]
+ ],
+ "Imprimante réseau":[
+  ["L'imprimante est allumée et sans erreur ?","Regarder l'écran de l'imprimante."],
+  ["Elle a une adresse IP ?","Imprimer la page de configuration."],
+  ["Ping de l'imprimante","Depuis un PC du même réseau."],
+  ["L'adresse a changé ?","Si oui, fixer l'adresse IP de l'imprimante."],
+  ["Vider la file d'impression","Sur le PC, puis relancer l'impression."]
+ ],
+ "Prise sans réseau":[
+  ["Tester avec un autre câble","Les câbles s'abîment souvent."],
+  ["Trouver la prise dans la baie","Suivre l'étiquette du numéro de prise."],
+  ["Le port du switch est actif ?","Voyant allumé quand on branche."],
+  ["Tester la prise au testeur","Les 8 fils doivent passer."],
+  ["Refaire la prise si besoin","Puis retester et étiqueter."]
+ ]
+};
+
+const auj=()=>cleJour(new Date());
+function cleJour(d){return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")}
+function decale(n){const d=new Date();d.setDate(d.getDate()-n);return d}
+
+let etat=charger()||{jours:{},cibles:{inter:4,ticket:6,rapport:4},inters:[],phrase:0,panne:"Pas d'internet",coches:[],type:"Panne"};
+if(etat.phraseJour!==auj()){etat.phrase=Math.floor(Math.random()*PHRASES.length);etat.phraseJour=auj();sauver()}
+
+const $=s=>document.querySelector(s);
+const net=t=>String(t||"").replace(/[<>&"]/g,c=>({"<":"&lt;",">":"&gt;","&":"&amp;",'"':"&quot;"}[c]));
+function toast(t,action,fn){const e=$("#toast");e.textContent=t;e.classList.toggle("action",!!action);
+  if(action){const b=document.createElement("button");b.type="button";b.textContent=action;b.onclick=()=>{e.classList.remove("on");fn()};e.appendChild(b)}
+  e.classList.add("on");clearTimeout(e._t);e._t=setTimeout(()=>e.classList.remove("on"),action?6000:1800)}
+
+/* ---------- Phrase boost ---------- */
+function rendPhrase(){const p=PHRASES[etat.phrase];$("#phrase").innerHTML=p[0]+"<em>"+p[1]+"</em>"}
+$("#uneAutre").onclick=()=>{let n;do{n=Math.floor(Math.random()*PHRASES.length)}while(n===etat.phrase);etat.phrase=n;sauver();rendPhrase()};
+
+/* ---------- Objectifs + série ---------- */
+// Jour validé = au moins un rapport envoyé
+function jourOk(k){const j=etat.jours[k];return !!(j&&j.rapport>0)}
+function serie(){let i=jourOk(auj())?0:1,n=0;while(jourOk(cleJour(decale(i)))){n++;i++}return n}
+function modifie(id,delta){
+  const k=auj();etat.jours[k]=etat.jours[k]||{};
+  etat.jours[k][id]=Math.max(0,(etat.jours[k][id]||0)+delta);
+  sauver();rendJour();
+}
+function rendJour(){
+  const j=etat.jours[auj()]||{};
+  $("#objectifs").innerHTML=OBJ_DEF.map(o=>{
+    const v=j[o.id]||0,c=etat.cibles[o.id],pct=Math.min(100,v/c*100);
+    return `<div class="obj ${v>=c?"fait":""}">
+      <div class="obj-ic ${o.ic}">${ICONES[o.id]}</div>
+      <div class="obj-info"><div class="obj-nom">${o.nom}</div>
+        <div class="sous">Objectif : <button class="cible" data-cible="${o.id}" aria-label="Changer l'objectif ${o.nom}, actuel ${c}">${c}</button> / jour</div>
+        <div class="barre"><i style="transform:scaleX(${pct/100})"></i></div></div>
+      <div class="compte">${v}<small>/${c}</small></div>
+      <div class="pm"><button data-plus="${o.id}" aria-label="Ajouter ${o.nom}">+</button><button data-moins="${o.id}" aria-label="Retirer ${o.nom}">−</button></div>
+    </div>`}).join("");
+  const s=serie(),ok=jourOk(auj());
+  $("#serieNb").textContent=s;
+  $("#serieBadge").classList.toggle("off",!ok);
+  $("#serieMsg").innerHTML=s===0?"Envoie un rapport aujourd'hui pour lancer ta série."
+    :ok?`<b>${s} jour${s>1?"s":""} d'affilée.</b> Rapports à jour aujourd'hui.`
+    :`<b class="alerte">${s} jour${s>1?"s":""} en jeu.</b> Envoie un rapport aujourd'hui pour la garder.`;
+  const noms=["D","L","M","M","J","V","S"];let h="";
+  for(let i=6;i>=0;i--){const d=decale(i),k=cleJour(d);
+    h+=`<div class="jour ${jourOk(k)?"ok":""} ${i===0?"auj":""}">${noms[d.getDay()]}<b>${d.getDate()}</b></div>`}
+  $("#semaine").innerHTML=h;
+  const reste=Math.max(0,(j.inter||0)-(j.rapport||0)),box=$("#afaire");
+  box.classList.toggle("urgent",reste>0);
+  box.innerHTML=reste>0
+    ?`<div><div class="afaire-nb">${reste} rapport${reste>1?"s":""} à envoyer</div><div class="sous">${(j.rapport||0)>0?"Série gardée pour aujourd'hui.":"À envoyer avant la fin de journée."}</div></div><button class="afaire-go" data-aller="v-inter">Voir</button>`
+    :(j.inter||0)>0
+    ?`<div><div class="afaire-nb">Rapports à jour</div><div class="sous">${j.inter} intervention${j.inter>1?"s":""} aujourd'hui, tout est envoyé.</div></div><button class="afaire-go sec" data-aller="v-inter">Ajouter</button>`
+    :`<div><div class="afaire-nb">Aucune intervention</div><div class="sous">Note la première dès que tu arrives sur site.</div></div><button class="afaire-go" data-aller="v-inter">Noter</button>`;
+}
+$("#objectifs").addEventListener("click",e=>{
+  const b=e.target.closest("button");if(!b)return;
+  if(b.dataset.plus)modifie(b.dataset.plus,1);
+  if(b.dataset.moins)modifie(b.dataset.moins,-1);
+  if(b.dataset.cible){const id=b.dataset.cible,inp=document.createElement("input");
+    inp.type="number";inp.inputMode="numeric";inp.min="1";inp.max="99";inp.value=etat.cibles[id];inp.className="cible-champ";
+    inp.setAttribute("aria-label","Nouvel objectif par jour");
+    const valide=()=>{const v=parseInt(inp.value,10);if(v>0&&v<100)etat.cibles[id]=v;else toast("Objectif entre 1 et 99");sauver();rendJour()};
+    inp.addEventListener("blur",valide,{once:true});
+    inp.addEventListener("keydown",ev=>{if(ev.key==="Enter")inp.blur();if(ev.key==="Escape"){inp.value=etat.cibles[id];inp.blur()}});
+    b.replaceWith(inp);inp.focus();inp.select()}
+});
+
+/* ---------- Interventions + rapport ---------- */
+const ETATS=["Résolu","À revoir"];
+function rendTypes(){$("#typeInter").innerHTML=TYPES.map(t=>`<button data-type="${t}" aria-pressed="${t===etat.type}">${t}</button>`).join("");
+  etat.etat=etat.etat||"Résolu";
+  $("#etatInter").innerHTML=ETATS.map(t=>`<button data-etat="${t}" aria-pressed="${t===etat.etat}">${t}</button>`).join("")}
+$("#etatInter").addEventListener("click",e=>{const b=e.target.closest("[data-etat]");if(!b)return;etat.etat=b.dataset.etat;sauver();rendTypes()});
+$("#typeInter").addEventListener("click",e=>{const b=e.target.closest("[data-type]");if(!b)return;etat.type=b.dataset.type;sauver();rendTypes()});
+function rapport(d){
+  return `RAPPORT D'INTERVENTION
+Date : ${d.date} à ${d.heure}
+Site : ${d.site}
+Type : ${d.type}
+
+Problème : ${d.probleme||"—"}
+Ce qui a été fait : ${d.solution||"—"}${d.materiel?"\nMatériel : "+d.materiel:""}
+
+État : ${(d.etat||"Résolu").toLowerCase()}.`;
+}
+// Jour de l'intervention (anciennes fiches : date fr-FR jj/mm/aaaa)
+function jourDe(d){if(d.jour)return d.jour;const m=/^(\d{2})\/(\d{2})\/(\d{4})$/.exec(d.date||"");return m?`${m[3]}-${m[2]}-${m[1]}`:""}
+function titreJour(k){if(k===auj())return"Aujourd'hui";if(k===cleJour(decale(1)))return"Hier";
+  const p=k.split("-");return p.length===3?new Intl.DateTimeFormat("fr-FR",{weekday:"long",day:"numeric",month:"long"}).format(new Date(+p[0],p[1]-1,+p[2])):"Plus ancien"}
+let edition=-1;
+function rendInters(){
+  let html="",dernier=null;
+  etat.inters.forEach((d,i)=>{
+    const k=jourDe(d);if(k!==dernier){html+=`<h3 class="jour-titre">${net(titreJour(k))}</h3>`;dernier=k}
+    const statut=d.envoye?"Envoyé":d.attente?"Envoi à confirmer":"Pas encore envoyé";
+    html+=`<div class="idee" id="inter-${i}"><div class="obj-nom">${net(d.site)} <span class="sous">· ${net(d.type)}</span></div>
+      <div class="etat-envoi ${d.envoye?"":"attente"}">${statut}${d.modifie&&!d.envoye?" · modifié":""}</div>
+      <div class="rapport">${net(rapport(d))}</div>
+      ${d.attente?`<div class="confirme"><span>Le rapport est parti ?</span><button class="oui" data-oui="${i}">Oui</button><button data-non="${i}">Non</button></div>`:""}
+      <div class="idee-act"><button data-copier="${i}">Copier</button><button data-mail="${i}">Mail</button><button data-modif="${i}">Modifier</button><button data-suppr="${i}">Supprimer</button></div>
+    </div>`});
+  $("#inters").innerHTML=html||'<div class="vide">Aucune intervention enregistrée. Remplis le formulaire au-dessus.</div>';
+  const sites=[...new Set(etat.inters.map(d=>d.site))].slice(0,15);
+  $("#sitesRecents").innerHTML=sites.map(s=>`<option value="${net(s)}">`).join("");
+}
+const CHAMPS=["site","probleme","solution","materiel"];
+// Brouillon : la saisie survit à un appel ou à la fermeture de l'app
+function sauverBrouillon(){if(edition>=0)return;etat.brouillon={};CHAMPS.forEach(c=>etat.brouillon[c]=$("#"+c).value);sauver()}
+CHAMPS.forEach(c=>$("#"+c).addEventListener("input",()=>{if(c==="site")$("#site").removeAttribute("aria-invalid");sauverBrouillon()}));
+function viderForm(){CHAMPS.forEach(c=>$("#"+c).value="");etat.brouillon=null;sauver()}
+function finEdition(){edition=-1;$("#ajoutInter").textContent="Créer le rapport";$("#annulerEdit").hidden=true}
+$("#ajoutInter").onclick=()=>{
+  const site=$("#site").value.trim();
+  if(!site){$("#site").setAttribute("aria-invalid","true");$("#site").focus();toast("Indique le client ou le site pour créer le rapport");return}
+  $("#site").removeAttribute("aria-invalid");
+  const v={site,type:etat.type,probleme:$("#probleme").value.trim(),solution:$("#solution").value.trim(),materiel:$("#materiel").value.trim(),etat:etat.etat};
+  let i=0;
+  if(edition>=0){i=edition;const d=etat.inters[i];Object.assign(d,v);if(d.envoye){d.compte=true;d.envoye=false;d.modifie=true}d.attente=false;
+    finEdition();viderForm();rendInters();toast("Rapport modifié")}
+  else{const n=new Date();
+    etat.inters.unshift(Object.assign(v,{date:n.toLocaleDateString("fr-FR"),heure:n.toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"}),jour:auj()}));
+    etat.inters=etat.inters.slice(0,100);viderForm();modifie("inter",1);rendInters();toast("Rapport prêt");
+    sauvegarderFacture({client:$("#site").value,total:150,date:new Date().toLocaleDateString('fr-FR'),statut:'brouillon'});alert('Facture créée.');}
+  const el=$("#inter-"+i);el.classList.add("neuf");el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"center"});
+};
+$("#annulerEdit").onclick=()=>{finEdition();viderForm();toast("Modification annulée")};
+// Copie : API moderne, sinon méthode classique (aperçus et iframes qui bloquent le presse-papier)
+async function copierTexte(t){
+  try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(t);return true}}catch(e){}
+  try{const z=document.createElement("textarea");z.value=t;z.setAttribute("readonly","");z.style.cssText="position:fixed;top:0;left:0;opacity:0;font-size:16px";
+    document.body.appendChild(z);z.focus();z.select();z.setSelectionRange(0,t.length);const ok=document.execCommand("copy");z.remove();return ok}catch(e){return false}
+}
+function selectionner(i){const el=$("#inter-"+i+" .rapport");if(!el)return;const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r);el.scrollIntoView({block:"center"})}
+// Mail : lien mailto ; si rien ne s'ouvre (aperçu bloqué), le rapport est copié à la place
+function ouvrirMail(sujet,corps,i){
+  let parti=false;const v=()=>{if(document.hidden)parti=true};const bl=()=>{parti=true};
+  document.addEventListener("visibilitychange",v);window.addEventListener("blur",bl,{once:true});
+  const a=document.createElement("a");a.href="mailto:?subject="+encodeURIComponent(sujet)+"&body="+encodeURIComponent(corps);a.target="_top";a.rel="noopener";
+  document.body.appendChild(a);try{a.click()}catch(e){}a.remove();
+  setTimeout(async()=>{document.removeEventListener("visibilitychange",v);window.removeEventListener("blur",bl);
+    if(parti)return;
+    if(await copierTexte(corps))toast("Mail bloqué ici. Rapport copié : colle-le dans ton mail");
+    else{selectionner(i);toast("Mail bloqué ici. Texte sélectionné : copie-le")}},1200);
+}
+// Compteurs du jour suivent la suppression / restauration d'une fiche
+function compter(d,s){const k=auj(),j=etat.jours[k]=etat.jours[k]||{};
+  if(jourDe(d)===k)j.inter=Math.max(0,(j.inter||0)+s);
+  if(d.compte&&(d.jourCompte||jourDe(d))===k)j.rapport=Math.max(0,(j.rapport||0)+s)}
+// Envoyé seulement quand tu le confirmes ; compté une seule fois
+function confirmer(i){const d=etat.inters[i];d.attente=false;d.envoye=true;if(!d.compte){d.compte=true;d.jourCompte=auj();modifie("rapport",1)}else sauver();rendInters()}
+$("#inters").addEventListener("click",async e=>{
+  const b=e.target.closest("button");if(!b)return;const D=b.dataset;
+  if(D.copier){const i=+D.copier,d=etat.inters[i];
+    if(await copierTexte(rapport(d))){if(!d.envoye){d.attente=true;sauver();rendInters()}toast("Rapport copié. Confirme quand il est parti")}
+    else{selectionner(i);toast("Texte sélectionné : appuie sur Copier")}}
+  if(D.mail){const i=+D.mail,d=etat.inters[i];if(!d.envoye){d.attente=true;sauver();rendInters()}
+    ouvrirMail("Intervention "+d.site+" "+d.date,rapport(d),i)}
+  if(D.oui)confirmer(+D.oui);
+  if(D.non){etat.inters[D.non].attente=false;sauver();rendInters()}
+  if(D.modif){const i=+D.modif,d=etat.inters[i];edition=i;
+    $("#site").value=d.site;$("#probleme").value=d.probleme||"";$("#solution").value=d.solution||"";$("#materiel").value=d.materiel||"";
+    etat.type=d.type;etat.etat=d.etat||"Résolu";rendTypes();
+    $("#ajoutInter").textContent="Enregistrer les modifications";$("#annulerEdit").hidden=false;
+    $("#site").scrollIntoView({block:"center"});$("#site").focus()}
+  if(D.suppr){const i=+D.suppr,d=etat.inters.splice(i,1)[0];if(edition===i){finEdition();viderForm()}else if(edition>i)edition--;
+    compter(d,-1);sauver();rendInters();rendJour();toast("Intervention supprimée","Annuler",()=>{etat.inters.splice(i,0,d);if(edition>=i)edition++;compter(d,1);sauver();rendInters();rendJour();toast("Intervention restaurée")})}
+});
+
+/* ---------- Sauvegarde / restauration ---------- */
+$("#exporter").onclick=async()=>{
+  const nom="reboot-sauvegarde-"+auj()+".json",f=new File([JSON.stringify(etat)],nom,{type:"application/json"});
+  // iPhone : feuille de partage (Fichiers, iCloud, mail). Sinon : téléchargement.
+  try{if(navigator.canShare&&navigator.canShare({files:[f]})){await navigator.share({files:[f],title:nom});toast("Sauvegarde envoyée");return}}
+  catch(e){if(e.name==="AbortError")return}
+  const a=document.createElement("a");a.href=URL.createObjectURL(f);a.download=nom;document.body.appendChild(a);a.click();a.remove();
+  setTimeout(()=>URL.revokeObjectURL(a.href),4000);toast("Sauvegarde téléchargée");
+};
+$("#importer").onclick=()=>$("#fichierImport").click();
+$("#fichierImport").onchange=async e=>{const f=e.target.files[0];e.target.value="";if(!f)return;
+  let d;try{d=JSON.parse(await f.text())}catch(x){toast("Fichier illisible : choisis une sauvegarde REBOOT");return}
+  if(!d||typeof d.jours!=="object"||!Array.isArray(d.inters)){toast("Ce fichier n'est pas une sauvegarde REBOOT");return}
+  toast(d.inters.length+" fiche"+(d.inters.length>1?"s":"")+" dans la sauvegarde. Tes données actuelles seront remplacées.","Remplacer",()=>{
+    etat=Object.assign({cibles:{inter:4,ticket:6,rapport:4},coches:[],type:"Panne",panne:"Pas d'internet"},d);
+    if(!PANNES[etat.panne])etat.panne="Pas d'internet";
+    if(!(etat.phrase>=0&&etat.phrase<PHRASES.length))etat.phrase=0;
+    finEdition();sauver();
+    CHAMPS.forEach(c=>$("#"+c).value=(etat.brouillon&&etat.brouillon[c])||"");
+    rendPhrase();rendJour();rendTypes();rendInters();rendDiag();toast("Données restaurées")})
+};
+
+/* ---------- Diagnostic ---------- */
+function rendDiag(){
+  $("#pannes").innerHTML=Object.keys(PANNES).map(p=>`<button data-panne="${p}" aria-pressed="${p===etat.panne}">${p}</button>`).join("");
+  const etapes=PANNES[etat.panne],suiv=etapes.findIndex((s,i)=>!etat.coches.includes(i));
+  $("#progression").textContent=suiv<0?`Toutes les étapes vérifiées (${etapes.length}/${etapes.length}).`:`Étape ${suiv+1} sur ${etapes.length} à faire.`;
+  $("#resolu").disabled=etat.coches.length===0;
+  $("#etapes").innerHTML=etapes.map((s,i)=>{const ok=etat.coches.includes(i);
+    return `<button class="etape ${ok?"ok":""} ${i===suiv?"suivante":""}" data-etape="${i}" aria-pressed="${ok}">
+      <span class="case">${ok?'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>':""}</span>
+      <span><span class="lib">${i+1}. ${s[0]}</span><small>${s[1]}</small></span></button>`}).join("");
+}
+$("#pannes").addEventListener("click",e=>{const b=e.target.closest("[data-panne]");if(!b)return;etat.panne=b.dataset.panne;etat.coches=[];sauver();rendDiag()});
+$("#etapes").addEventListener("click",e=>{const b=e.target.closest("[data-etape]");if(!b)return;
+  const i=+b.dataset.etape,k=etat.coches.indexOf(i);k<0?etat.coches.push(i):etat.coches.splice(k,1);sauver();rendDiag()});
+$("#raz").onclick=()=>{etat.coches=[];sauver();rendDiag()};
+$("#resolu").onclick=()=>{
+  if(edition>=0){finEdition();viderForm()}
+  const faites=etat.coches.map(i=>PANNES[etat.panne][i][0]).join(", ");
+  $("#probleme").value=etat.panne;$("#solution").value=faites?"Vérifié : "+faites:"";sauverBrouillon();
+  etat.type="Panne";etat.coches=[];sauver();modifie("ticket",1);rendTypes();rendDiag();
+  afficher("v-inter");if(!$("#site").value)$("#site").focus();toast("Ticket fermé. Complète le rapport");
+};
+
+/* ---------- Navigation ---------- */
+function afficher(id){
+  document.querySelectorAll(".vue").forEach(v=>v.classList.toggle("on",v.id===id));
+  document.querySelectorAll(".nav button").forEach(b=>{if(b.dataset.v===id)b.setAttribute("aria-current","page");else b.removeAttribute("aria-current")});
+  window.scrollTo(0,0);
+}
+document.querySelectorAll(".nav button").forEach(b=>b.onclick=()=>afficher(b.dataset.v));
+$("#afaire").addEventListener("click",e=>{const b=e.target.closest("[data-aller]");if(b)afficher(b.dataset.aller)});
+
+/* ---------- Bascule sombre/clair (DESIGN.md §3) ---------- */
+var SUN='<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
+var MOON='<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>';
+function updateToggle(theme){
+  var btn=document.getElementById('themeToggle'),isClair=theme==='clair';
+  btn.innerHTML=isClair?MOON:SUN;
+  btn.setAttribute('aria-pressed',String(isClair));
+  btn.setAttribute('aria-label',isClair?'Passer en mode sombre':'Passer en mode clair');
+}
+function setTheme(theme){
+  if(theme&&theme!=='base')document.documentElement.dataset.theme=theme;
+  else delete document.documentElement.dataset.theme;
+  try{localStorage.setItem('theme',theme)}catch(e){}
+  updateToggle(theme);majBarre();
+}
+function majBarre(){$("#couleurBarre").content=getComputedStyle(document.body).backgroundColor}
+document.getElementById('themeToggle').addEventListener('click',function(){
+  var current=document.documentElement.dataset.theme||'base';
+  setTheme(current==='base'?'clair':'base');
+});
+updateToggle(document.documentElement.dataset.theme||'base');
+
+/* ---------- Démarrage ---------- */
+rendPhrase();rendJour();rendTypes();rendInters();rendDiag();
+if(etat.brouillon)CHAMPS.forEach(c=>$("#"+c).value=etat.brouillon[c]||"");
+majBarre();
+// Clavier : Entrée passe au champ suivant, le dernier crée le rapport
+CHAMPS.forEach((c,n)=>{const el=$("#"+c);el.enterKeyHint=n<CHAMPS.length-1?"next":"done";
+  el.addEventListener("keydown",ev=>{if(ev.key!=="Enter"||ev.isComposing)return;ev.preventDefault();
+    if(n<CHAMPS.length-1)$("#"+CHAMPS[n+1]).focus();else{el.blur();$("#ajoutInter").click()}})});
+// App restée ouverte (écran d'accueil) : nouveau jour = phrase, série et titres à jour
+document.addEventListener("visibilitychange",()=>{if(document.hidden)return;
+  if(etat.phraseJour!==auj()){etat.phrase=Math.floor(Math.random()*PHRASES.length);etat.phraseJour=auj();sauver();rendPhrase()}
+  rendJour();rendInters()});
+</script>
+</body>
+</html>
