@@ -1,0 +1,5 @@
+[
+  {"id": 1, "attendu": {"gravite": "haute", "action": "verifier cable Gi0/1"}},
+  {"id": 2, "attendu": {"gravite": "moyenne", "action": "verifier processus CPU"}},
+  {"id": 3, "attendu": {"gravite": "haute", "action": "remplacer cable Gi0/5"}}
+]

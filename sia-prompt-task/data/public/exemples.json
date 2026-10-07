@@ -1,0 +1,5 @@
+[
+  {"id": 1, "entree": "EXEMPLE A REMPLACER : Interface Gi0/1 down depuis 3 min, voisin Switch-B"},
+  {"id": 2, "entree": "EXEMPLE A REMPLACER : CPU routeur 95% depuis 10 min"},
+  {"id": 3, "entree": "EXEMPLE A REMPLACER : Port Gi0/5 flap 12 fois en 1 min"}
+]
