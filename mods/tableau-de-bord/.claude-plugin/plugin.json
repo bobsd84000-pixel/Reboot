@@ -1,0 +1,1 @@
+{ "name": "tableau-de-bord", "version": "0.1.0", "description": "Tableau de bord : agents en cours, tâches du jour, notes ajoutées dans ~/notes", "types": "./types/index.d.ts" }

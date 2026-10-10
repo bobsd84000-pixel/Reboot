@@ -1,0 +1,9 @@
+{
+  "name": "reboot-mods",
+  "owner": { "name": "bobsd84000-pixel" },
+  "plugins": [
+    { "name": "relais-sessions", "source": "./mods/relais-sessions" },
+    { "name": "tableau-de-bord", "source": "./mods/tableau-de-bord" },
+    { "name": "routage-haiku", "source": "./mods/routage-haiku" }
+  ]
+}
