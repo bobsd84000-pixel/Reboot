@@ -1,0 +1,116 @@
+{
+  ".claude-plugin/marketplace.json": {
+    "mtime": 1792614211.2317595,
+    "seen": 1792614253.591301,
+    "ast_hash": "83a16f4e85fec52c9fc4da7fb1bf71e6",
+    "semantic_hash": ""
+  },
+  "mods/relais-sessions/.claude-plugin/plugin.json": {
+    "mtime": 1792614211.232913,
+    "seen": 1792614253.591313,
+    "ast_hash": "97556eaea1394947ff2cdae93e9ca4e6",
+    "semantic_hash": ""
+  },
+  "mods/relais-sessions/hooks/hooks.json": {
+    "mtime": 1792614211.232913,
+    "seen": 1792614253.5913188,
+    "ast_hash": "6bdf5fb499e8e99248680187d6b1f3da",
+    "semantic_hash": ""
+  },
+  "mods/relais-sessions/hooks/register.tsx": {
+    "mtime": 1792614211.2330031,
+    "seen": 1792614253.591323,
+    "ast_hash": "c9ef8c81a15b686c25175ada9ebce475",
+    "semantic_hash": ""
+  },
+  "mods/relais-sessions/hooks/role.test.ts": {
+    "mtime": 1792614211.2330031,
+    "seen": 1792614253.5913265,
+    "ast_hash": "029c37e4b0e696270bfcc450a4b49d96",
+    "semantic_hash": ""
+  },
+  "mods/routage-haiku/.claude-plugin/plugin.json": {
+    "mtime": 1792614211.2330945,
+    "seen": 1792614253.5913293,
+    "ast_hash": "bd04b05d37986441431d7116b7ac6eee",
+    "semantic_hash": ""
+  },
+  "mods/routage-haiku/hooks/classify.test.ts": {
+    "mtime": 1792614211.2330945,
+    "seen": 1792614253.591333,
+    "ast_hash": "b864c69c358e22905941ae4ed5c7bfd7",
+    "semantic_hash": ""
+  },
+  "mods/routage-haiku/hooks/classify.ts": {
+    "mtime": 1792614211.2331688,
+    "seen": 1792614253.5913358,
+    "ast_hash": "71af9c56353c6965a8654ed308176c60",
+    "semantic_hash": ""
+  },
+  "mods/routage-haiku/hooks/hooks.json": {
+    "mtime": 1792614211.2331688,
+    "seen": 1792614253.5913384,
+    "ast_hash": "6bdf5fb499e8e99248680187d6b1f3da",
+    "semantic_hash": ""
+  },
+  "mods/routage-haiku/hooks/register.tsx": {
+    "mtime": 1792614211.2331688,
+    "seen": 1792614253.5913413,
+    "ast_hash": "d96691bbc64d0799e9c6a9089618bdbd",
+    "semantic_hash": ""
+  },
+  "mods/routage-haiku/hooks/vrai.test.ts": {
+    "mtime": 1792614211.2331688,
+    "seen": 1792614253.591344,
+    "ast_hash": "f07008d4e988febac6ec9d2a4780a4e4",
+    "semantic_hash": ""
+  },
+  "mods/tableau-de-bord/.claude-plugin/plugin.json": {
+    "mtime": 1792614211.2332854,
+    "seen": 1792614253.5913475,
+    "ast_hash": "be0a50510b56a69008af9941217fb0b4",
+    "semantic_hash": ""
+  },
+  "mods/tableau-de-bord/hooks/hooks.json": {
+    "mtime": 1792614211.2332854,
+    "seen": 1792614253.5913506,
+    "ast_hash": "6bdf5fb499e8e99248680187d6b1f3da",
+    "semantic_hash": ""
+  },
+  "mods/tableau-de-bord/hooks/register.tsx": {
+    "mtime": 1792614211.2334073,
+    "seen": 1792614253.5913532,
+    "ast_hash": "6b902c321cba79c32d8d89082c3bc616",
+    "semantic_hash": ""
+  },
+  "mods/tableau-de-bord/hooks/tableau.test.ts": {
+    "mtime": 1792614211.2334073,
+    "seen": 1792614253.591355,
+    "ast_hash": "bc19f13e7b69d7b82809746b2fe37648",
+    "semantic_hash": ""
+  },
+  "mods/tableau-de-bord/types/index.d.ts": {
+    "mtime": 1792614211.2334073,
+    "seen": 1792614253.5913577,
+    "ast_hash": "80d948b87a695f6bbf2565b5e78e841a",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1792614211.2317595,
+    "seen": 1792614253.5913606,
+    "ast_hash": "6b1f85a19853d3e361bdb8ade04a208a",
+    "semantic_hash": ""
+  },
+  "index.html": {
+    "mtime": 1792614211.2317595,
+    "seen": 1792614253.5913634,
+    "ast_hash": "1e31dc1045682e7ea9952b7b9a48e420",
+    "semantic_hash": ""
+  },
+  "mods/README.md": {
+    "mtime": 1792614211.2317595,
+    "seen": 1792614253.591367,
+    "ast_hash": "122affed2de23e5590f94b9b76e9b25e",
+    "semantic_hash": ""
+  }
+}
